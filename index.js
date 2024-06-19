@@ -1,14 +1,7 @@
 import express from "express";
 import bodyParser from "body-parser";
-<<<<<<< HEADm
 import pg from "pg"
 import env from "dotenv"
-=======
-import pg from "pg";
-import env from "dotenv";
-
-
->>>>>>> 858e887e679f5e70c56d03eafcbea6e77076c3d8
 
 
 const app = express();
@@ -17,19 +10,13 @@ const Port = 3000;
 
 
 const db = new pg.Client({
-<<<<<<< HEAD
+
   user : process.env.USER,
   host : process.env.HOST,
   database : process.env.DATABASE,
   password : process.env.PASSWORD,
   port : process.env.PORT
-=======
-  user: process.env.PG_USER,
-  host: process.env.PG_HOST,
-  database: process.env.PG_DATABASE,
-  password: process.env.PG_PASSWORD,
-  port: process.env.PG_PORT,
->>>>>>> 858e887e679f5e70c56d03eafcbea6e77076c3d8
+
 })
 
 db.connect();
